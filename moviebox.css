@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: red; */
+    /* border: 2px solid #000; */
+    padding: 10px 60px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: #ec365e; */
+    /* height: 100vh; */
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: arial;
+}
+.logo {
+    width: 12rem;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 2.8rem;
+}
+
+.searchBar{
+    width: 32rem;
+    background: transparent;
+    padding: .4rem;
+    border-radius: 5px;
+    font-size: larger;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn{
+    padding: 0.4rem;
+    font-size: 1rem;
+    background-color: #ec365e;
+    margin: 0 1rem;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    /* border-color: #ec365e; */
+    cursor: pointer;
+    transition: 0.16s;
+}
+.btn:hover{
+    background-color: white;
+    color: #ec365e  ;
+}
+.btn:active{
+    background-color: rgb(213, 209, 209);
+}
+.watch{
+    cursor: pointer;
+    transition: 0.16s;
+}
+.watch:hover{
+    background-color: white;
+    color: #ec365e  ;
+}
+.watch:active{
+    background-color: rgb(213, 209, 209);
+}
+
+/* hero section */
+.main{
+    background-image: url("johnwick.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+
+    /* background-color: black; */
+    height: 50rem;
+    width: 100%;
+}
+.hero-section{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 40rem;
+}
+.About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15rem 0 0;
+}
+.title{
+    font-size: 3rem;
+    width: 20rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem 0rem;
+}
+.dec{
+    font-family: arial;
+}
+.imbd-logo img{
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+.rt-logo img{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+.rating{
+    display: flex;
+    margin: 1rem 0rem;
+
+}
+.imbd , .rt{
+    display: flex;
+    margin: 0 1rem;
+}
+.imbd{
+    scale: 1.2; 
+}
+.dec{
+    width: 22rem;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+}
+.hero-btn input{
+    padding: 0.5rem 0.8rem;
+    border-radius: 8px;
+    background-color: #ec365e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+}
+.head{
+    margin: 3rem;
+}
+
+/* Movie cards */
+.section-head{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.movie-cards{
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: capitalize;
+}
+.card-photo img{
+    height: 17rem;
+    transition: 0.15s;
+    cursor: pointer;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+}
+.card-movie-date{
+    font-size: 0.7rem;
+    font-family: arial;
+    color: gray;
+}
+.card-movie-name{
+    font-family: arial;
+    font-weight: bold;
+    margin: 0.2rem 0rem;
+    line-height: 20px;
+    width: 12.5rem;
+}
+.card-movie-rating{
+    display: flex;
+    margin: 0.2rem 0rem;
+    justify-content: space-between;
+}
+.card-movie-imdb{
+    display: flex;
+    margin: 0 .5rem 0 0;
+}
+.card-movie-imdb-logo img{
+    height: 1.06rem;
+    margin-right: .5rem;
+}
+.card-movie-imdb-rating{
+    font-family: arial;
+    font-size: 0.8rem;
+}
+.card-movie-rt{
+    display: flex;
+    /* margin: 0.3rem; */
+}
+.card-movie-rt-logo img{
+    height: 1.06rem;
+}
+.card-movie-genre{
+    font-family: arial;
+    font-size: 0.7rem;
+    color: gray;
+}
+.card-photo img:hover{
+    box-shadow: 12px 0px 52px black;
+    height: 19rem;
+}
+.card-photo img:active{
+    opacity: 0.9;
+}
+
+
+/* Movie trailers */
+
+.movie-trailers{
+    display: flex;
+    justify-content: space-around;
+    text-transform: capitalize;
+    cursor: pointer;
+    
+}
+.trailer-photo img{
+    width: 15.8rem;
+    transition: .15s;
+    
+}
+.trailer-name{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: arial;
+    margin-top: 0.6rem;
+    width: 15.6rem;
+}
+.trailer-photo img:hover{
+    box-shadow: 12px 0px 52px black;
+    width: 18rem;
+}
+.trailer-photo img:active{
+    opacity: 0.9;
+}
+
+/* Cast Section */
+.movie-cast{
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.cast-photo img{
+    height: 15rem;
+    transition: .16s;
+}
+.cast-name{
+    font-size: 1rem;
+    font-family: arial;
+    font-weight: bold;
+}
+.cast-photo img:hover{
+    box-shadow: 12px 0px 52px black;
+    height: 16rem;
+}
+.cast-photo img:active{
+    opacity: .9;
+}
